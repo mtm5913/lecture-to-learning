@@ -2,9 +2,9 @@
 
 **Stage:** Plan draft, November 15, 2026. **Due:** November 17, 2026, 1 p.m. Eastern.
 
-This is the team's working record for Deliverable 3, educational-content publishing. No application, recording, transcription run, retrieval experiment or publishing test exists yet. This record is AI-assisted and requires both members' review. It is not ready to submit until the outstanding items below are resolved.
+This is the team's working record for Deliverable 3, educational-content publishing. No application, recording, transcription run, retrieval experiment or publishing test exists yet. A synthetic written fixture and Plan artifact checks now exist; see the evidence index below. This record is AI-assisted and requires both members' review. It is not ready to submit until the outstanding items below are resolved.
 
-**Team:** [your name], [partner name]. **Repository URL:** https://github.com/mtm5913/lecture-to-learning. **Shared record URL:** https://github.com/mtm5913/lecture-to-learning/blob/main/README.md. **Demo:** none.
+**Team:** Megan, [partner name pending]. **Repository URL:** https://github.com/mtm5913/lecture-to-learning. **Shared record URL:** https://github.com/mtm5913/lecture-to-learning/blob/main/README.md. **Demo:** none.
 
 ## Research-review index
 
@@ -38,7 +38,7 @@ The lecture is the primary content source. A transcript is a derived representat
 | L01 | Teacher lecture recording; teacher, topic, date and file reference TBD | Not collected; teacher authorization and course/institution requirements not verified | Original evidence for what was said |
 | T01 | Timestamped transcript derived from L01 | Not created; inherits L01 access restrictions | Searchable passages and citations |
 | C01 | Optional teacher-approved slides/readings | None selected; permission must be checked separately | Clarify terms or verify subject claims |
-| F01 | Team-authored short sample lecture | Not written or recorded; label synthetic when created | Early workflow fixture, not evidence of real classroom usefulness |
+| F01 | [AI-authored synthetic written lecture](fixtures/lecture-script.md) | Created as project fixture; no teacher or recording; illustrative timestamp labels | Source trace and evaluation preparation, not classroom findings |
 
 **Proposed source manifest fields:** source ID, title/topic, author/speaker, date, original location, permission evidence and permitted audience, processing permission, retention/deletion decision, content hash, transcript version, timestamp range, and access status. No recording is authorized merely by this plan.
 
@@ -84,9 +84,9 @@ Course research to complete: [database/graph/RAG handout](https://kaw393939.gith
 7. Teacher opens cited evidence, corrects/rejects unsupported material and approves a specific draft version. Transcript corrections invalidate affected citations and require review again.
 8. Publish the approved version to the permitted student audience. Preserve a review history; edits return the document to draft.
 
-**Illustrative trace only — not an executed test:** Suppose synthetic recording F01 says at 00:20–00:35, “An extract, transform, load pipeline extracts source data, transforms it, and loads the result into a destination.” Derived passage `F01-v1-p02` retains those timestamps and text. Retrieval for “What are the ETL stages?” should return that passage. Draft claim “ETL has extract, transform and load stages [F01-v1-p02, 00:20–00:35]” goes into the review queue. The reviewer compares it with the recording before approving it. These IDs, timestamps and words are a designed fixture; no audio or transcript file exists.
+**Prepared trace, not system execution:** [F01 synthetic script](fixtures/lecture-script.md) → passage `F01-v1-p03` (illustrative 00:50–01:15) → proposed passage storage/index → [sample guide](docs/sample-study-guide.md), version-specific approval claim → AI text review recorded in [Plan checks](evidence/plan-checks-2026-11-15.md). No audio exists, no storage/index was built, and no teacher approved the draft. The passage labels are not measured timestamps.
 
-**Failure trace:** A request for “Which database does this teacher recommend?” has no support in that passage. The output should say evidence is insufficient, rather than inventing a recommendation. A timestamp pointing to the wrong segment, or a claim changing the source meaning, fails review even if a citation is present.
+**Failure trace:** The seeded claim “editing preserves approval” cites a real fixture passage but contradicts p03. The evaluation requires rejection. Questions about provider choice and price must identify missing evidence. The prepared examples clarify expected behavior; they do not show that a model or reviewer actually catches errors.
 
 This shared system adds persistent source/version tracking, assigned human review and approved publication beyond an individual chat.
 
@@ -115,7 +115,7 @@ All criteria below are proposed acceptance checks, with results **NOT RUN**. Mem
 | Vector/graph/RAG research and architecture comparison | Both, individual notes required | Cross-review | Initial AI-assisted source summaries above; member review pending |
 | Integration, evaluation and real peer workshop | Both, specify tasks when assigned | Cross-review plus real peer | None yet |
 
-**Known contribution:** The requesting student selected educational-content publishing and defined the lecture → transcript → source-supported learning-material workflow. Add their name and a durable record/commit link. Do not claim implementation, research reading or testing that has not occurred.
+**Known contribution:** Megan selected educational-content publishing, defined the lecture → transcript → source-supported learning-material workflow, and authorized reuse of her existing RAG notes. [Research adaptation and original contribution links](docs/research-notes.md). New planning artifacts and checks are AI-assisted; Megan’s review of the adaptation remains pending. No group implementation is claimed.
 
 **Help received:** An AI assistant drafted this record and proposed architecture, stories and checks. Team members must verify the linked research, revise choices, and explain their own work. No simulated peer review is included.
 
@@ -133,7 +133,7 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 
 ## Actual checks and next steps
 
-**Changed November 15:** Created an initial shared Plan draft and individual submission-note draft.
+**Changed November 15:** Created the shared Plan and submission draft; added the independently preparable artifacts indexed below.
 
 **Actually checked during drafting:** Workspace was empty before drafting. Opened the RAG paper abstract and the linked Sentence Transformers and Neo4j documentation; bounded technical summaries to those sources. Compared this draft's sections against the assignment text supplied in chat. These are document/source checks, not software tests or independent human review.
 
@@ -145,7 +145,25 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 - Choose the lecture topic and teacher/contact; document source availability and permission status honestly.
 - Both members read the course handout and original technical sources; add their own research notes and actual contribution links.
 - Obtain a real peer's trace review, document the tradeoff challenged, and revise the record as warranted.
-- Create/use the shared remote repository and verify the record is accessible to the reviewer. Add actual URLs; this local file is not a submission link.
+- Shared public repository and record now exist. Verify access again before submission; update links if moved.
 - Cross-review the draft, update changed/checked/next, and finish each person's contribution note.
 
 **After Plan:** Obtain an authorized sample, implement one complete path, execute and record the evaluation set, compare the alternative, and later host the system. Proposed course milestones from the supplied brief: Build November 24, 1 p.m.; Checked Release December 3, 1 p.m.; Improve December 10, 11:59 p.m., all Eastern. Verify schedule in the [course guide](https://njit.instructure.com/courses/70733/pages/is373-projects-and-weekly-work).
+
+
+## Independent preparation evidence index
+
+- [Megan’s existing research applied here](docs/research-notes.md): links to her prior notes; fresh AI cross-checks and limits.
+- [Written synthetic lecture fixture](fixtures/lecture-script.md): no audio or machine transcription claimed.
+- [Sample study guide and seeded bad claims](docs/sample-study-guide.md): editorial example, not application output.
+- [Alternative architecture presentation](docs/alternative-comparison.md): paper comparison, not measured retrieval results.
+- [Nine evaluation cases and expected evidence](fixtures/evaluation.json): actual test inputs prepared; model tests not run.
+- [Executed Plan checks](evidence/plan-checks-2026-11-15.md) and [reproduction script](scripts/check_plan.py).
+- [Teacher/student discovery and peer-review prompts](docs/discovery-and-review.md): prepared; conversations not conducted.
+
+**Decision to discuss with the team:** A short lecture may fit a full-transcript or keyword baseline. Vector retrieval is provisional, not a requirement to justify after the fact. [Research amendment](docs/research-notes.md#architecture-amendment).
+
+**Observations:** Megan’s prior notes exist; a synthetic script, draft output and evaluation records have now been created; fixture checks ran. **Assumptions:** teacher demand, student usefulness, permission availability and vector retrieval benefit remain unverified. **Pending human work:** teammate contributions/agreement, Megan’s review of the adaptation, teacher source contract and real peer feedback. The independent preparation does not satisfy those requirements by itself.
+
+- [Proposed build contract and failure states](docs/build-contract.md).
+- [Plan requirement/readiness audit](evidence/plan-readiness.md).

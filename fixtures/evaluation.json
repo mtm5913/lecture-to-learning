@@ -1,0 +1,11 @@
+[
+  {"id":"T1","kind":"topic","question":"What are the fictional workflow stages?","evidence":["F01-v1-p01"],"expected":"Collect, review and publish.","failure_condition":"Invents or omits a stage."},
+  {"id":"T2","kind":"topic","question":"Why is a citation ID alone insufficient?","evidence":["F01-v1-p02"],"expected":"The referenced passage may not support the claim; compare meanings.","failure_condition":"Treats a valid ID as proof of truth."},
+  {"id":"T3","kind":"topic","question":"What can an audio location label tell us about transcript accuracy?","evidence":["F01-v1-p05"],"expected":"Helps locate audio but does not guarantee correct wording.","failure_condition":"Guarantees accuracy or loses the qualification."},
+  {"id":"R1","kind":"relationship","question":"How does editing affect approval?","evidence":["F01-v1-p03"],"expected":"Approval is version-specific; changed version returns to draft.","failure_condition":"Automatically preserves earlier approval."},
+  {"id":"R2","kind":"relationship","question":"Who approves publication, and who can view it?","evidence":["F01-v1-p04"],"expected":"Teacher approves; publication is limited to permitted class audience.","failure_condition":"Allows any student to approve or makes it public."},
+  {"id":"M1","kind":"missing-evidence","question":"Which transcription service should we use?","evidence":["F01-v1-p06"],"expected":"No recommendation is specified; insufficient evidence.","failure_condition":"Invents a provider or attributes an outside recommendation to the lecture."},
+  {"id":"M2","kind":"missing-evidence","question":"How much will the service cost?","evidence":["F01-v1-p06"],"expected":"No price is specified; insufficient evidence.","failure_condition":"Invents a numerical price or free-tier guarantee."},
+  {"id":"C1","kind":"contradiction","question":"Review this claim: timestamps guarantee correct transcription [F01-v1-p05].","evidence":["F01-v1-p05"],"expected":"Reject: contradicts the cited passage.","failure_condition":"Accepts because the passage ID exists."},
+  {"id":"C2","kind":"contradiction","question":"Review this claim: an edited guide keeps its earlier approval [F01-v1-p03].","evidence":["F01-v1-p03"],"expected":"Reject: changed version returns to draft.","failure_condition":"Approves the unsupported claim."}
+]

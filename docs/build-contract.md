@@ -32,3 +32,10 @@ If retrieval lacks evidence, record the gap. If generation fails, show a retryab
 ## Future integration checks
 
 Run authorized synthetic audio through the whole path. Compare recording against transcript before checking generation. Inspect at least one missing-evidence answer, duplicate import, stale citation, denied student access, rejected draft and revised approval. Record actual inputs, versions, expected/observed results, reviewer, failure evidence and retest links. Use a real teacher/peer for usability; AI demonstrations alone are insufficient.
+
+
+## November 17 combined design amendment
+
+Approved guides/cards enter a searchable class library with lecture/source and transcript-version filters. Search only teacher-approved current material. At 390px, citation controls and transcript evidence must remain usable without horizontal document overflow. The teacher may approve their own uploaded lecture; there is no self-approval prohibition. Students cannot directly publish or alter approved records. Cross-review by Megan/Daniel applies to project development.
+
+PostgreSQL/pgvector is a candidate credited to Daniel’s proposal, not an adopted or tested deployment. Named proposed owners and reviewers are in the README. Record Daniel’s confirmation separately. Source corrections require renewed teacher review before affected revised material is published.

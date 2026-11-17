@@ -5,7 +5,7 @@
 | Draft claim | Supporting passage | AI document review |
 |---|---|---|
 | The fictional workflow has collect, review and publish stages; drafts are unavailable in the student publication view. | F01-v1-p01, 00:00–00:25 | Supported by script wording. |
-| A different person reviews the draft and checks each claim's meaning against the cited passage. | F01-v1-p02, 00:25–00:50 | Supported; the presence of a reference alone is insufficient. |
+| The teacher reviews the draft, including materials from their own lecture, and checks each claim's meaning against the cited passage. | F01-v1-p02, 00:25–00:50 | Supported; the presence of a reference alone is insufficient. |
 | Approval covers a specific version; changing an approved guide returns the changed version to draft. | F01-v1-p03, 00:50–01:15 | Supported; preserves version condition. |
 | The teacher must approve publication, which is limited to the permitted class audience. | F01-v1-p04, 01:15–01:40 | Supported; does not imply public publication. |
 | Transcripts may contain errors; timestamps help locate audio but do not guarantee correct wording. | F01-v1-p05, 01:40–02:05 | Supported; retains “may” and “does not guarantee.” |

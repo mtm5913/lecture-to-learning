@@ -11,7 +11,7 @@ Store six passages with source/version IDs and timestamp labels. Embed the appro
 | Subject | Relationship | Object | Evidence |
 |---|---|---|---|
 | Editor | prepares | Draft | p01 |
-| Different reviewer | reviews | Draft | p02 |
+| Teacher | reviews | Draft | p02 |
 | Claim | requires | Supporting passage | p02 |
 | Approval | applies to | Specific version | p03 |
 | Changed version | returns to | Draft | p03 |

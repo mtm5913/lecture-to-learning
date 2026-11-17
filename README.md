@@ -1,10 +1,10 @@
 # Lecture to Learning — shared project record
 
-**Stage:** Plan draft, November 15, 2026. **Due:** November 17, 2026, 1 p.m. Eastern.
+**Stage:** Plan, updated November 17, 2026. **Due:** November 17, 2026, 1 p.m. Eastern.
 
-This is the team's working record for Deliverable 3, educational-content publishing. No application, recording, transcription run, retrieval experiment or publishing test exists yet. A synthetic written fixture and Plan artifact checks now exist; see the evidence index below. This record is AI-assisted and requires both members' review. It is not ready to submit until the outstanding items below are resolved.
+This is the team's working record for Deliverable 3, educational-content publishing. No application, recording, transcription run, retrieval experiment or publishing test exists yet. A synthetic written fixture and Plan artifact checks now exist; see the evidence index below. This record is AI-assisted and requires both members' review. Remaining human review and source-permission gaps are disclosed below.
 
-**Team:** Megan, [partner name pending]. **Repository URL:** https://github.com/mtm5913/lecture-to-learning. **Shared record URL:** https://github.com/mtm5913/lecture-to-learning/blob/main/README.md. **Demo:** none.
+**Team:** Megan and Daniel. **Repository URL:** https://github.com/mtm5913/lecture-to-learning. **Shared record URL:** https://github.com/mtm5913/lecture-to-learning/blob/main/README.md. **Demo:** none.
 
 ## Research-review index
 
@@ -23,9 +23,13 @@ This is the team's working record for Deliverable 3, educational-content publish
 
 **Primary reader:** A student revisiting a teacher's lecture. **Editor/approver:** The teacher. **Proposed problem:** Students need concise learning materials that preserve the lecture's meaning and let them locate the supporting explanation. Teachers need a way to correct and approve these materials before students see them. These needs are hypotheses, not findings from interviews.
 
-**Research question:** How can a teacher-authorized lecture be transformed into a useful study guide with verifiable transcript references and teacher approval before publication?
+**Research question:** How can a teacher-authorized lecture be transformed into accurate, reviewable learning materials that students can search and verify against the lecture?
 
-**Bounded first version:** Capture one short lecture, transcribe it with timestamps, prepare one study guide, and let the teacher review and publish it. Briefings and question sets are later output options. Start with a short recording rather than simultaneous live transcription; live capture is a later extension. This is a proposed scope choice for the team to confirm.
+**Combined direction:** Teacher-authorized lecture → corrected transcript → cited study guide or learning cards → teacher review/approval → searchable class library. Megan contributes the lecture-to-learning workflow and her existing RAG research; Daniel contributes the learning-library proposal, learning cards, source/version filters, mobile citation usability, source-change review and PostgreSQL/pgvector as an architecture candidate. [Combined decision and contribution provenance](docs/combined-decision.md).
+
+**Bounded first version:** One short recorded lecture, a corrected timestamped transcript, one cited study guide, teacher approval, and a searchable class-restricted library. Learning cards are an additional format after the first path works; briefings/question sets and simultaneous live capture remain later options. SQL/pandas tutorials from Daniel’s original proposal are optional future teacher-approved supporting sources, not a second required corpus.
+
+**Approval rule:** The teacher may upload, correct and approve materials from their own lecture. Students view/search approved material; optional correction suggestions stay drafts until teacher approval. There is no requirement for a second teacher or blanket self-approval prohibition. Megan and Daniel must still review each other’s project work, as required by the assignment.
 
 **Discovery still needed:** Ask a teacher what makes lecture summaries useful or misleading, what correction effort is acceptable, and whether recording/processing is permitted. Ask a student to locate support for a sample guide claim. Record actual responses here; no interviews have occurred.
 
@@ -69,7 +73,7 @@ Course research to complete: [database/graph/RAG handout](https://kaw393939.gith
 | Work required | Chunking, embedding, retrieval tuning and citation review | Schema design, extraction, relationship validation and retrieval logic |
 | Evidence needed | Compare retrieved passages with human-labeled relevant passages | Compare a small manually verified concept map with expected relationships |
 
-**Provisional decision:** Approach A, with ordinary relational records for permissions, versions and review state. The first question is finding lecture passages for guide sections, and a verified concept graph would add work before that path is useful. This is an engineering judgment, not a measured advantage. A vector index does not replace the review workflow or guarantee factuality. Provider/model, hosting and costs remain undecided pending permission and a small experiment.
+**Provisional decision:** Approach A, with ordinary relational records for permissions, versions and review state. The first question is finding lecture passages for guide sections, and a verified concept graph would add work before that path is useful. This is an engineering judgment, not a measured advantage. A vector index does not replace the review workflow or guarantee factuality. PostgreSQL with pgvector, proposed in Daniel’s research, is a candidate for storing vectors alongside relational source/version/review records. Adoption, extension availability, model/provider, hosting and costs remain unverified and subject to team review. No database has been implemented.
 
 **Meaningful alternative experiment, planned:** For the same short lecture, manually map 5–10 concepts and evidence-backed relationships. Compare A and B on three topic questions and two relationship questions. Record relevant evidence found/missed, unsupported relationships, and preparation/review time. Revisit the architecture if relationship questions dominate or vector retrieval repeatedly misses required context. No experiment has run.
 
@@ -82,7 +86,7 @@ Course research to complete: [database/graph/RAG handout](https://kaw393939.gith
 5. Store original recording privately; store transcript passages, source/version metadata, draft revisions and review events in a database. Index passage embeddings for retrieval.
 6. For each proposed guide section, retrieve passages from that lecture/version, draft only supported claims, attach passage/timestamp references and mark insufficient evidence. A whole-guide coverage check must catch lecture topics omitted by section retrieval.
 7. Teacher opens cited evidence, corrects/rejects unsupported material and approves a specific draft version. Transcript corrections invalidate affected citations and require review again.
-8. Publish the approved version to the permitted student audience. Preserve a review history; edits return the document to draft.
+8. Publish the approved version to a searchable library restricted to the permitted class audience. Search only approved material, filter by lecture/source and transcript version, and display mobile-usable citations. Preserve review history; edits or source corrections require renewed teacher approval. Unsupported requests receive an evidence-gap response.
 
 **Prepared trace, not system execution:** [F01 synthetic script](fixtures/lecture-script.md) → passage `F01-v1-p03` (illustrative 00:50–01:15) → proposed passage storage/index → [sample guide](docs/sample-study-guide.md), version-specific approval claim → AI text review recorded in [Plan checks](evidence/plan-checks-2026-11-15.md). No audio exists, no storage/index was built, and no teacher approved the draft. The passage labels are not measured timestamps.
 
@@ -92,15 +96,15 @@ This shared system adds persistent source/version tracking, assigned human revie
 
 ## Stories and evaluation
 
-All criteria below are proposed acceptance checks, with results **NOT RUN**. Member A/B are placeholders to replace with real names.
+All criteria below are proposed acceptance checks, with results **NOT RUN**. Named task assignments are proposed for team confirmation; they do not claim completed implementation. A different project reviewer is not an application approval restriction.
 
-| Story | Planned check and pass criterion | Owner | Different reviewer |
+| Story | Planned check and pass criterion | Proposed owner | Different project reviewer |
 |---|---|---|---|
-| As a teacher, I import an authorized lecture once and can locate its source record. | Import the same file twice: one lecture, traceable permission record; an unauthorized fixture cannot proceed. | A | B |
-| As a teacher, I correct transcription before guide creation. | Compare a short recording with transcript: inspect names, numbers, negation and timestamps; corrections create a version and affected drafts require review. | A | B |
-| As a student, I inspect evidence behind a study-guide claim. | For every factual claim in one short guide, reviewer opens the cited passage/audio and finds supporting meaning at the stated location; zero unsupported claims accepted. | B | A |
-| As a student, I receive an honest gap when the lecture lacks evidence. | Two intentionally absent-topic questions produce an insufficient-evidence response, without invented answers or citations. | B | A |
-| As a teacher, I control what students receive. | Draft/rejected material is unavailable to the student view; approval exposes only the approved version. Teacher completes review without developer help and feedback is recorded. | B | A |
+| As a teacher, I import an authorized lecture without duplicates. | Reimport the same file: one lecture/source record, retained permission evidence and stable source identity; unauthorized processing is blocked. | Daniel | Megan |
+| As a teacher, I correct and version the transcript before materials are prepared. | Inspect names, numbers, negations and timing against audio; corrections create a version and flag affected materials for renewed review. | Daniel | Megan |
+| As a teacher, I review and correct cited learning materials generated from my lecture. | Inspect every factual claim in one short guide against its cited passage/audio; reject seeded unsupported claims. The same teacher who uploaded the lecture can review and approve it. | Megan | Daniel |
+| As a student, I search approved materials and inspect their evidence. | Predeclared paraphrased questions retrieve the relevant approved material in the first four results; lecture/version filters exclude other versions; citation text is readable and usable at 390px without horizontal overflow. | Daniel | Megan |
+| As a teacher, I control publication and revisions so students receive reviewed, supported materials. | Draft/rejected versions stay unavailable to students; only the approved version appears. Source/guide changes require renewed approval. Two absent-topic questions receive insufficient-evidence responses without invented claims. | Megan | Daniel |
 
 **Small evaluation set to create:** one permitted 3–5 minute recording; human-corrected transcript; three answerable topic questions; two relationship questions for the alternative comparison; two absent-topic questions; one duplicate import; one transcript correction; one rejected draft. Label expected supporting passages before running retrieval. Do not score similarity alone as correctness.
 
@@ -108,14 +112,19 @@ All criteria below are proposed acceptance checks, with results **NOT RUN**. Mem
 
 ## Owners and contributions
 
-| Work slice | Proposed owner | Reviewer | Actual evidence |
+| Work slice | Proposed owner | Different reviewer | Actual contribution / status |
 |---|---|---|---|
-| Teacher discovery, source contract, recording/transcript/version design | Member A — name TBD | Member B — name TBD | None yet |
-| Guide generation, citation review and publishing-state design | Member B — name TBD | Member A — name TBD | None yet |
-| Vector/graph/RAG research and architecture comparison | Both, individual notes required | Cross-review | Initial AI-assisted source summaries above; member review pending |
-| Integration, evaluation and real peer workshop | Both, specify tasks when assigned | Cross-review plus real peer | None yet |
+| Source permissions, intake, transcription/version design | Daniel | Megan | Adaptation to lectures proposed; implementation not run |
+| Guide/card drafting, claim citations and missing-evidence evaluation | Megan | Daniel | Lecture workflow and prior research supplied; new artifacts AI-assisted |
+| Searchable class library, source/version filters and mobile citations | Daniel | Megan | Ideas documented in Daniel’s original proposal; implementation not run |
+| Teacher review, approval and source-change invalidation | Megan | Daniel | Combined design documented; Daniel’s source-change requirements credited |
+| Architecture and integration | Both: Megan contributes prior RAG notes; Daniel contributes library/pgvector research | Cross-review | Provisional choice; no group database or retrieval test |
 
-**Known contribution:** Megan selected educational-content publishing, defined the lecture → transcript → source-supported learning-material workflow, and authorized reuse of her existing RAG notes. [Research adaptation and original contribution links](docs/research-notes.md). New planning artifacts and checks are AI-assisted; Megan’s review of the adaptation remains pending. No group implementation is claimed.
+**Megan’s contribution:** Selected educational-content publishing, defined the lecture → transcript → learning-material workflow, supplied prior vector/graph/RAG notes, and directed the combined design and teacher-approval clarification. [Research provenance](docs/research-notes.md).
+
+**Daniel’s contribution:** Prepared the AI-assisted [Data Learning Library proposal](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/RESEARCH.md), including reviewed learning cards, searchable publication, source/version filters, mobile citation checks, renewed review after source changes and PostgreSQL/pgvector as a candidate. These ideas are retained here. [His contribution record](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/LEARNING.md). This credits existing planning work; it does not claim he edited this repository, accepted task assignments or implemented the features.
+
+**Agreement status:** Megan requested this combined direction and repository update on November 17. Daniel’s direct confirmation and acceptance of the proposed responsibilities have not been supplied in this chat. Record that confirmation here when received. No peer feedback is invented.
 
 **Help received:** An AI assistant drafted this record and proposed architecture, stories and checks. Team members must verify the linked research, revise choices, and explain their own work. No simulated peer review is included.
 
@@ -141,7 +150,7 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 
 **Before Plan submission:**
 
-- Confirm partner and replace member placeholders; agree scope and task split.
+- Obtain Daniel’s direct confirmation of the combined scope and proposed named task split.
 - Choose the lecture topic and teacher/contact; document source availability and permission status honestly.
 - Both members read the course handout and original technical sources; add their own research notes and actual contribution links.
 - Obtain a real peer's trace review, document the tradeoff challenged, and revise the record as warranted.
@@ -163,7 +172,16 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 
 **Decision to discuss with the team:** A short lecture may fit a full-transcript or keyword baseline. Vector retrieval is provisional, not a requirement to justify after the fact. [Research amendment](docs/research-notes.md#architecture-amendment).
 
-**Observations:** Megan’s prior notes exist; a synthetic script, draft output and evaluation records have now been created; fixture checks ran. **Assumptions:** teacher demand, student usefulness, permission availability and vector retrieval benefit remain unverified. **Pending human work:** teammate contributions/agreement, Megan’s review of the adaptation, teacher source contract and real peer feedback. The independent preparation does not satisfy those requirements by itself.
+**Observations:** Megan’s prior notes exist; a synthetic script, draft output and evaluation records have now been created; fixture checks ran. **Assumptions:** teacher demand, student usefulness, permission availability and vector retrieval benefit remain unverified. **Pending human work:** Daniel’s confirmation of the combined design/assignments, personal research review, teacher source contract and real peer feedback. The independent preparation does not satisfy those requirements by itself.
 
 - [Proposed build contract and failure states](docs/build-contract.md).
 - [Plan requirement/readiness audit](evidence/plan-readiness.md).
+
+
+## November 17 changed / checked / next
+
+**Changed:** Combined the lecture workflow with Daniel’s learning-library design, replaced the five stories, added named proposed owners and different project reviewers, credited both contributions, and clarified that teachers can approve materials from their own lectures. [Decision record](docs/combined-decision.md).
+
+**Checked:** AI reviewed the document for consistent teacher approval, named story coverage and contribution attribution; reran the fixture/local-link checks. [November 17 check record](evidence/combined-plan-checks-2026-11-17.md). No application tests or human peer review ran.
+
+**Next:** Daniel confirms the scope/task split; both members review the research; a real peer follows the trace and challenges a tradeoff; record the response and obtain a teacher-authorized source. Submit the same shared record with separate contribution notes. [Canvas text](SUBMISSION-NOTE.md).

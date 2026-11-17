@@ -96,9 +96,9 @@ This shared system adds persistent source/version tracking, assigned human revie
 
 ## Stories and evaluation
 
-All criteria below are proposed acceptance checks, with results **NOT RUN**. Named task assignments are proposed for team confirmation; they do not claim completed implementation. A different project reviewer is not an application approval restriction.
+All criteria below are proposed acceptance checks, with results **NOT RUN**. Named task assignments are the working split, proceeding on Megan’s stated assumption of Daniel’s agreement; they do not claim completed implementation. A different project reviewer is not an application approval restriction.
 
-| Story | Planned check and pass criterion | Proposed owner | Different project reviewer |
+| Story | Planned check and pass criterion | Owner (working split) | Different project reviewer |
 |---|---|---|---|
 | As a teacher, I import an authorized lecture without duplicates. | Reimport the same file: one lecture/source record, retained permission evidence and stable source identity; unauthorized processing is blocked. | Daniel | Megan |
 | As a teacher, I correct and version the transcript before materials are prepared. | Inspect names, numbers, negations and timing against audio; corrections create a version and flag affected materials for renewed review. | Daniel | Megan |
@@ -112,7 +112,7 @@ All criteria below are proposed acceptance checks, with results **NOT RUN**. Nam
 
 ## Owners and contributions
 
-| Work slice | Proposed owner | Different reviewer | Actual contribution / status |
+| Work slice | Owner (working split) | Different reviewer | Actual contribution / status |
 |---|---|---|---|
 | Source permissions, intake, transcription/version design | Daniel | Megan | Adaptation to lectures proposed; implementation not run |
 | Guide/card drafting, claim citations and missing-evidence evaluation | Megan | Daniel | Lecture workflow and prior research supplied; new artifacts AI-assisted |
@@ -124,7 +124,7 @@ All criteria below are proposed acceptance checks, with results **NOT RUN**. Nam
 
 **Daniel’s contribution:** Prepared the AI-assisted [Data Learning Library proposal](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/RESEARCH.md), including reviewed learning cards, searchable publication, source/version filters, mobile citation checks, renewed review after source changes and PostgreSQL/pgvector as a candidate. These ideas are retained here. [His contribution record](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/LEARNING.md). This credits existing planning work; it does not claim he edited this repository, accepted task assignments or implemented the features.
 
-**Agreement status:** Megan requested this combined direction and repository update on November 17. Daniel’s direct confirmation and acceptance of the proposed responsibilities have not been supplied in this chat. Record that confirmation here when received. No peer feedback is invented.
+**Working agreement:** On November 17, Megan instructed us to proceed assuming Daniel confirms the combined scope and named responsibilities. We are using that working agreement for planning; this records Megan’s instruction rather than a direct statement from Daniel. It is not peer feedback or evidence of implementation.
 
 **Help received:** An AI assistant drafted this record and proposed architecture, stories and checks. Team members must verify the linked research, revise choices, and explain their own work. No simulated peer review is included.
 
@@ -150,7 +150,7 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 
 **Before Plan submission:**
 
-- Obtain Daniel’s direct confirmation of the combined scope and proposed named task split.
+- Proceed with the combined scope and named working split on Megan’s instruction; record any later team changes.
 - Choose the lecture topic and teacher/contact; document source availability and permission status honestly.
 - Both members read the course handout and original technical sources; add their own research notes and actual contribution links.
 - Obtain a real peer's trace review, document the tradeoff challenged, and revise the record as warranted.
@@ -172,7 +172,7 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 
 **Decision to discuss with the team:** A short lecture may fit a full-transcript or keyword baseline. Vector retrieval is provisional, not a requirement to justify after the fact. [Research amendment](docs/research-notes.md#architecture-amendment).
 
-**Observations:** Megan’s prior notes exist; a synthetic script, draft output and evaluation records have now been created; fixture checks ran. **Assumptions:** teacher demand, student usefulness, permission availability and vector retrieval benefit remain unverified. **Pending human work:** Daniel’s confirmation of the combined design/assignments, personal research review, teacher source contract and real peer feedback. The independent preparation does not satisfy those requirements by itself.
+**Observations:** Megan’s prior notes exist; a synthetic script, draft output and evaluation records have now been created; fixture checks ran. **Assumptions:** teacher demand, student usefulness, permission availability and vector retrieval benefit remain unverified. **Pending human work:** personal research review, teacher source contract and real peer feedback. The independent preparation does not satisfy those requirements by itself.
 
 - [Proposed build contract and failure states](docs/build-contract.md).
 - [Plan requirement/readiness audit](evidence/plan-readiness.md).
@@ -184,4 +184,4 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 
 **Checked:** AI reviewed the document for consistent teacher approval, named story coverage and contribution attribution; reran the fixture/local-link checks. [November 17 check record](evidence/combined-plan-checks-2026-11-17.md). No application tests or human peer review ran.
 
-**Next:** Daniel confirms the scope/task split; both members review the research; a real peer follows the trace and challenges a tradeoff; record the response and obtain a teacher-authorized source. Submit the same shared record with separate contribution notes. [Canvas text](SUBMISSION-NOTE.md).
+**Next:** Both members review the research; a real peer follows the trace and challenges a tradeoff; record the response and obtain a teacher-authorized source. Submit the same shared record with separate contribution notes. [Canvas text](SUBMISSION-NOTE.md).

@@ -1,6 +1,6 @@
 # Canvas entries — combined Plan, November 17
 
-Use the same shared links with each member’s actual contribution. Pending human work is disclosed; update only when completed. Daniel should confirm the combined direction and his entry before using it.
+Use the same shared links with each member’s actual contribution. Pending human work is disclosed; update only when completed. Proceeding with the combined direction and responsibilities on Megan’s instruction to assume Daniel’s agreement. Each member should review their own entry for accuracy.
 
 ## Megan
 
@@ -14,9 +14,9 @@ Our proposed system records or accepts a teacher-authorized lecture, creates a c
 
 **My contribution:** I selected the lecture workflow, supplied my earlier vector/graph/RAG notes, directed the combined design and clarified teacher-controlled approval. AI assisted with drafting, synthetic examples and evaluation preparation. [Research and contribution evidence](https://github.com/mtm5913/lecture-to-learning/blob/main/docs/research-notes.md) · [Combined decision](https://github.com/mtm5913/lecture-to-learning/blob/main/docs/combined-decision.md).
 
-**Changed:** Updated the shared record with the combined workflow, five stories, named proposed responsibilities and both members’ contribution provenance. **Checked:** AI checked fixture integrity, local references and document consistency; these are not transcription or application tests. [Evidence](https://github.com/mtm5913/lecture-to-learning/blob/main/evidence/combined-plan-checks-2026-11-17.md). **Next:** Confirm assignments with Daniel, complete personal research review, obtain real peer feedback and teacher permission, and implement the first path.
+**Changed:** Updated the shared record with the combined workflow, five stories, named proposed responsibilities and both members’ contribution provenance. **Checked:** AI checked fixture integrity, local references and document consistency; these are not transcription or application tests. [Evidence](https://github.com/mtm5913/lecture-to-learning/blob/main/evidence/combined-plan-checks-2026-11-17.md). **Next:** Use the named working assignments, complete personal research review, obtain real peer feedback and teacher permission, and implement the first path.
 
-**Limits:** No real lecture collected or application hosted; all system checks are planned. Daniel’s direct confirmation of the combined design/assignments and real peer feedback remain to be recorded.
+**Limits:** No real lecture collected or application hosted; all system checks are planned. Real peer feedback and personal research review remain pending.
 
 ## Daniel
 
@@ -30,6 +30,6 @@ Our proposed system turns a teacher-authorized lecture into a corrected transcri
 
 **My contribution:** I prepared the AI-assisted Data Learning Library proposal. The combined design retains its searchable library, learning cards, source/version filtering, mobile citation checks and renewed review after source changes. I proposed PostgreSQL/pgvector as a candidate architecture. [Original proposal](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/RESEARCH.md) · [Contribution record](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/LEARNING.md) · [Combined decision](https://github.com/mtm5913/lecture-to-learning/blob/main/docs/combined-decision.md).
 
-**Changed:** My original library proposal contributes the library/review requirements now documented in the combined shared Plan. **Checked:** AI source and presentation checks are documented in my original repository; they do not test this application. [Evidence](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/CHECKS.md). **Next:** Confirm the combined scope and named responsibilities, review technical sources and teammate changes, obtain real peer feedback, and implement the agreed intake/library work.
+**Changed:** My original library proposal contributes the library/review requirements now documented in the combined shared Plan. **Checked:** AI source and presentation checks are documented in my original repository; they do not test this application. [Evidence](https://github.com/dan38-cmyk/Group-Content-System/blob/de003bb/CHECKS.md). **Next:** Proceed with the combined scope and named working responsibilities, review technical sources and teammate changes, obtain real peer feedback, and implement the agreed intake/library work.
 
-**Limits:** Plan only; no working/hosted lecture system or application tests. The shared record currently discloses that my direct confirmation of the combined design/assignments and real peer feedback have not yet been recorded. Update this accurately after confirming.
+**Limits:** Plan only; no working/hosted lecture system or application tests. Real peer feedback and personal research review remain pending. The named working split proceeds on Megan’s stated assumption of agreement.

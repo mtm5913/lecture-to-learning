@@ -1,6 +1,6 @@
 # Proposed build contract
 
-**Plan specification, not implemented. Team confirmation required.** This narrows the first useful path without choosing providers before permission review.
+**Plan specification, not implemented. Working scope proceeds on Megan’s instruction to assume agreement.** This narrows the first useful path without choosing providers before permission review.
 
 ## Initial path and component choices
 
@@ -38,4 +38,4 @@ Run authorized synthetic audio through the whole path. Compare recording against
 
 Approved guides/cards enter a searchable class library with lecture/source and transcript-version filters. Search only teacher-approved current material. At 390px, citation controls and transcript evidence must remain usable without horizontal document overflow. The teacher may approve their own uploaded lecture; there is no self-approval prohibition. Students cannot directly publish or alter approved records. Cross-review by Megan/Daniel applies to project development.
 
-PostgreSQL/pgvector is a candidate credited to Daniel’s proposal, not an adopted or tested deployment. Named proposed owners and reviewers are in the README. Record Daniel’s confirmation separately. Source corrections require renewed teacher review before affected revised material is published.
+PostgreSQL/pgvector is a candidate credited to Daniel’s proposal, not an adopted or tested deployment. Named proposed owners and reviewers are in the README. Use the working split on the basis recorded in the combined decision. Source corrections require renewed teacher review before affected revised material is published.

@@ -30,4 +30,4 @@ Chunking splits text; embedding represents it numerically. Neither a valid citat
 
 Propose vector passage retrieval plus relational review/version records. For one short lecture, reading the complete transcript or using keyword search may be sufficient; do not require a vector database just to use RAG. Compare a whole-transcript/keyword baseline before paying the complexity cost. Retain graph retrieval as the second architectural approach, with an evidence-linked manual presentation in [the alternative comparison](alternative-comparison.md).
 
-**Limits:** Team agreement, teacher discovery, model/provider selection and external-processing permission remain pending. Existing Qdrant/Groq deployment experience does not authorize sending lecture recordings to those services. No individual app or portfolio is copied into the group deliverable.
+**Limits:** Teacher discovery, model/provider selection and external-processing permission remain pending. Existing Qdrant/Groq deployment experience does not authorize sending lecture recordings to those services. No individual app or portfolio is copied into the group deliverable.

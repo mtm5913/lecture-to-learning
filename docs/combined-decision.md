@@ -1,6 +1,6 @@
 # Combined project decision — November 17, 2026
 
-**Status:** Megan requested this combined direction and publication. Daniel’s direct acceptance of the design/task split remains to be recorded. This is a documented design decision, not real peer feedback or an implementation result.
+**Status:** Megan requested this combined direction and publication. Megan instructed us to proceed assuming Daniel agrees to the design/task split. This is the basis of the working agreement, not a direct confirmation attributed to Daniel. This is a documented design decision, not real peer feedback or an implementation result.
 
 ## Contribution provenance
 
@@ -27,4 +27,4 @@ Keep vector retrieval plus relational workflow/version records provisionally, wi
 
 ## Actual revision / next
 
-Updated shared problem/workflow, five stories, named proposed responsibilities, contribution attribution and both submission notes. Updated the synthetic example to match teacher-controlled approval. No audio exists; synthetic timing remains illustrative. Next: Daniel confirms assignments, both read/review, real peer feedback is recorded, and the teacher source contract is completed.
+Updated shared problem/workflow, five stories, named proposed responsibilities, contribution attribution and both submission notes. Updated the synthetic example to match teacher-controlled approval. No audio exists; synthetic timing remains illustrative. Next: use the working assignments, both read/review, real peer feedback is recorded, and the teacher source contract is completed.

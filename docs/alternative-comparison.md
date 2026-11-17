@@ -33,6 +33,6 @@ Here p01 means F01-v1-p01, etc. Relationships are manually selected from the syn
 
 **Observed in this paper exercise:** The drafted graph omits the workflow stages and compresses explanatory/negative statements. This is a limitation of this manually prepared representation, not proof all graph systems fail. The passages already contain the expected answers; semantic retrieval success has not been measured.
 
-**Provisional choice:** A, subject to baseline evaluation and team agreement. The useful group feature is source/version/review/publication control. The graph adds extraction/maintenance work without a demonstrated unmet question. Reconsider if real users need connections across lectures that passage retrieval misses.
+**Provisional choice:** A, subject to baseline evaluation; working scope follows Megan’s instruction to assume agreement. The useful group feature is source/version/review/publication control. The graph adds extraction/maintenance work without a demonstrated unmet question. Reconsider if real users need connections across lectures that passage retrieval misses.
 
 **Still planned:** Build both retrieval representations if warranted, use the same predeclared questions, record returned evidence and preparation time, inspect omissions, and compare a stronger lexical baseline. No numerical performance advantage is claimed.

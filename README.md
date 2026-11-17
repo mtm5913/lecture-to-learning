@@ -185,3 +185,11 @@ Do not fill this row with hypothetical feedback. Record a disagreement too if th
 **Checked:** AI reviewed the document for consistent teacher approval, named story coverage and contribution attribution; reran the fixture/local-link checks. [November 17 check record](evidence/combined-plan-checks-2026-11-17.md). No application tests or human peer review ran.
 
 **Next:** Both members review the research; a real peer follows the trace and challenges a tradeoff; record the response and obtain a teacher-authorized source. Submit the same shared record with separate contribution notes. [Canvas text](SUBMISSION-NOTE.md).
+
+## Team feedback and scope decision
+
+Megan proposed combining her teacher-authorized lecture workflow with Daniel’s searchable learning library. Teachers review and approve study materials before publication. Students can search approved materials and follow citations to the supporting transcript passage and timestamp.
+
+Daniel confirmed that the shared plan reflects the combined direction. Megan contributed the lecture-to-learning workflow. Daniel contributed the searchable library design, including source and version filters, mobile-friendly citations, and renewed review when a source changes.
+
+The source-trace peer walkthrough is pending. Record the walkthrough feedback, the team’s response, and any resulting changes in the [peer feedback table](#peer-feedback-and-decisions).
